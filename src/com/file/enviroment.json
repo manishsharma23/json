@@ -1,0 +1,48 @@
+{
+	"environments": [
+		{
+			"id": 1,
+			"server": "server 1",
+			"scriptPath": "D:\\Project\\sqld\\Data",
+			"Databases": [
+				{
+					"name": "TESTDB",
+					"username": "root",
+					"password": "sdfgdsgf"
+				},
+				{
+					"name": "TESTDB1",
+					"username": "manish",
+					"password": "sfdgdsf"
+				},
+				{
+					"name": "UATDB",
+					"username": "hetansh",
+					"password": "sdfsg"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"server": "Server 2",
+			"scriptPath": "D:\\Project\\minds\\Data",
+			"Databases": [
+				{
+					"name": "TESTDB",
+					"username": "manish",
+					"password": "sdfgdsgf"
+				},
+				{
+					"name": "TESTDB1",
+					"username": "manish",
+					"password": "sdgdsg"
+				},
+				{
+					"name": "UATDB",
+					"username": "manish",
+					"password": "asdfds"
+				}
+			]
+		}
+	]
+}
