@@ -11,7 +11,7 @@ import org.json.simple.parser.ParseException;
 
 public class ReadJSONExample_hpuft {
 	public static void main(String[] args) throws ParseException, FileNotFoundException, IOException {
-		jsonParsing("done", "plan selection screen is not displayed");
+		jsonParsing("Backlog23", "plan selection screen is not displayed 1");
 	}
 
 	static boolean isBlankString(String string) {
@@ -28,12 +28,13 @@ public class ReadJSONExample_hpuft {
 		for (int x = 0; x < ja.size(); x++) {
 			JSONObject ja1 = (JSONObject) ja.get(x);
 			JSONObject ja11 = (JSONObject) ja1.get("fields");
+			String keyObj =  ja1.get("key").toString();
 			String desc = (String) ja11.get("description").toString().trim();
 			JSONObject ja12 = (JSONObject) ja11.get("status");
 			String status = (String) ja12.get("name").toString().trim();
 			if (!(isBlankString(inStatus) && isBlankString(inDescription))
 					&& (status.equalsIgnoreCase(inStatus) && desc.equalsIgnoreCase(inDescription))) {
-				System.out.println(status + "....." + desc);
+				System.out.println(status + "....." + desc + "......"+keyObj);
 				System.out.println("Corrct...");
 				isStatusDescrition = true;
 				break;
